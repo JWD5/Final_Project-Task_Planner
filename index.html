@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-  <html lang="en">
+<!doctype html>
+<html lang="en">
   <head>
-   <meta charset="UTF-8">
+    
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Final Project</title>
-  </head>
 
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <title>Form</title>
+  </head>
   <body>
+    
     <!-- Bootstrap Navbar  -->
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -80,5 +86,66 @@
           </div>
         </div>
     </div>
-  </body>
+
+    <!-- Form Start -->
+    
+    <section>
+      <div class="Form">
+ 
+        <form action="#">
+        <div class="text">New Task</div>
+        
+          <div class="mb-3">
+          <label for="formGroupExampleInput" 
+          class="form-label">New Task:</label>
+          <input type="text" required
+          class="form-control" 
+          id="formGroupExampleInput">
+          
+        </div>
+       <div>
+         
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" 
+          class="form-label">Description:</label>
+          <textarea class="form-control" input required
+          id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+       </div>
+      
+       <div class="mb-3">
+          <label for="formGroupExampleInput2" 
+          class="form-label">Assigned To</label>
+          <input type="text"  required
+          class="form-control" 
+          id="formGroupExampleInput2">
+          
+        </div>
+       
+        <div class="mb-3">
+          <label for="formGroupExampleInput" 
+          class="form-label">Date</label>
+          <input type="text" required
+          class="form-control" 
+          id="formGroupExampleInput"
+          placeholder="dd/mm/yyyy">
+        </div>
+       
+        <div class="status">Status</div>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>To Do</option>
+          <option value="1">InProgress</option>
+          <option value="2">Review</option>
+          <option value="3">Done</option>
+        </select>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+      </form>
+       </section>
+
+        <!-- Form End -->
+      </body>
 </html>
