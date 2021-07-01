@@ -44,7 +44,7 @@
 
       
      
-        <!-- Create Task button triggers Task modal -->
+        <!-- Button to create the task (Opens up the form model) -->
         <button
           type="button"
           data-toggle="modal"
@@ -59,9 +59,9 @@
           </ul>
         </div>
       </div>
-      <!--Row for button and filter END-->
+      <!--Add task button end-->
 
-      <!--Modal (to open on click of Create Task Button) START-->
+      <!--To open up model on click-->
       <div
         class="modal fade"
         id="createTaskModal"
@@ -83,11 +83,11 @@
               </button>
             </div>
             <div class="modal-body">
-              <!--Start of Form-->
+              <!--Form start-->
               <section class="task-input-form">
 
                 <form id="newTaskForm">
-                  <!--Task name-->
+                  <!--Name of task-->
                   <div class="form-group row">
                     <label
                       for="newTaskNameInput"
@@ -104,7 +104,7 @@
                       />
                     </div>
                   </div>
-                  <!--assignedTo-->
+                  <!--Assignedto-->
                   <div class="form-group row">
                     <label
                       for="newTaskAssignedTo"
@@ -120,7 +120,7 @@
                       />
                     </div>
                   </div>
-                  <!--Description-->
+                  <!--Task Description-->
                   <div class="form-group row">
                     <label
                       for="newTaskDescription"
@@ -151,7 +151,7 @@
                     </div>
                   </div>
 
-                  <!--dueDate input-->
+                  <!--Due date-->
                   <div class="form-group row">
                     <label for="newTaskDueDate" class="col-sm-3 col-form-label">
                       Due date
@@ -165,8 +165,8 @@
                       />
                     </div>
                   </div>
-                  <!-- <div class="modal-footer"> if we want a footer-->
-                  <!-- Close button-->
+                
+                  <!-- Button to close-->
                   <div class="form-group" id="modal-footer">
                     <button
                       type="button"
@@ -175,7 +175,7 @@
                     >
                       Close
                     </button>
-                    <!-- Submit button-->
+                    <!-- Submit task button-->
                     <button
                       type="submit"
                       class="btn btn-success"
@@ -184,7 +184,7 @@
                       Save
                     </button>
                   </div>
-                  <!-- Form Validation Error Message-->
+                  <!-- Error message for form-->
                   <div
                     id="formErrorMessage"
                     style="display: none"
@@ -195,7 +195,7 @@
                   </div>
                 </form>
               </section>
-              <!-- FORM CONTENT END-->
+              <!-- End of the form-->
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@
 
 
    
-    <!-- Link -->
+    <!-- Link for js -->
     <script src="js/taskManager.js"></script>
     <script src="js/index.js"></script>
   </body>
