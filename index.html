@@ -44,14 +44,14 @@
 
       
      
-        <!-- Button to create the task (Opens up the form model) -->
+        <!-- Create Task button triggers Task modal -->
         <button
           type="button"
           data-toggle="modal"
           data-target="#createTaskModal"
           id="createTaskButton"
           <a href="#" id="btn" class="addbtn"> <img class="width="150" height="100" src="/images/button.png"> </a>
-          <div class="Tasks" id="Tasks"><h3>Tasks</h3></div>
+          <div class="Tasks" id="Tasks"><h3>Add Task</h3></div>
          
      
         
@@ -59,9 +59,9 @@
           </ul>
         </div>
       </div>
-      <!--Add task button end-->
+      <!--Row for button and filter END-->
 
-      <!--To open up model on click-->
+      <!--Modal (to open on click of Create Task Button) START-->
       <div
         class="modal fade"
         id="createTaskModal"
@@ -83,11 +83,11 @@
               </button>
             </div>
             <div class="modal-body">
-              <!--Form start-->
+              <!--Start of Form-->
               <section class="task-input-form">
 
                 <form id="newTaskForm">
-                  <!--Name of task-->
+                  <!--Task name-->
                   <div class="form-group row">
                     <label
                       for="newTaskNameInput"
@@ -104,7 +104,7 @@
                       />
                     </div>
                   </div>
-                  <!--Assignedto-->
+                  <!--assignedTo-->
                   <div class="form-group row">
                     <label
                       for="newTaskAssignedTo"
@@ -120,7 +120,7 @@
                       />
                     </div>
                   </div>
-                  <!--Task Description-->
+                  <!--Description-->
                   <div class="form-group row">
                     <label
                       for="newTaskDescription"
@@ -151,7 +151,7 @@
                     </div>
                   </div>
 
-                  <!--Due date-->
+                  <!--dueDate input-->
                   <div class="form-group row">
                     <label for="newTaskDueDate" class="col-sm-3 col-form-label">
                       Due date
@@ -165,8 +165,8 @@
                       />
                     </div>
                   </div>
-                
-                  <!-- Button to close-->
+                  <!-- <div class="modal-footer"> if we want a footer-->
+                  <!-- Close button-->
                   <div class="form-group" id="modal-footer">
                     <button
                       type="button"
@@ -175,7 +175,7 @@
                     >
                       Close
                     </button>
-                    <!-- Submit task button-->
+                    <!-- Submit button-->
                     <button
                       type="submit"
                       class="btn btn-success"
@@ -184,7 +184,7 @@
                       Save
                     </button>
                   </div>
-                  <!-- Error message for form-->
+                  <!-- Form Validation Error Message-->
                   <div
                     id="formErrorMessage"
                     style="display: none"
@@ -195,15 +195,36 @@
                   </div>
                 </form>
               </section>
-              <!-- End of the form-->
+              <!-- FORM CONTENT END-->
             </div>
           </div>
         </div>
       </div>
+      <!--Modal END-->
 
+      <!--Task cards container START-->
+      <div class="d-flex flex-wrap justify-content-center" id="card-container">
+        <!-- Task cards are pushed from JS into the card container here. https://getbootstrap.com/docs/4.0/components/card/ -->
+        <!-- Task Card Container END-->
+      </div>
+
+      <!--Footer-->
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
    
-    <!-- Link for js -->
+    <!-- Link -->
     <script src="js/taskManager.js"></script>
     <script src="js/index.js"></script>
   </body>
